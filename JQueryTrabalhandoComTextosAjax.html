@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exemplo de Imagens</title>
+		
+		<style>
+			#principal {
+				width:500px;
+			}
+			#continuacao {
+				display:none;
+			}
+		</style>
+		
+		<script src="js/jquery-3.2.1.js"></script>
+		
+		<script>
+		  $(function () {
+			$("#vermais").click(function(){
+				$("#vermais").hide();
+				$("#continuacao").load("Texto.txt"); //este código só irá funcionar se colocado em um servidor web...
+				$("#continuacao").show();
+				return false;
+			});
+		  });
+		</script>
+	</head>
+	<body>
+		<h2>Demonstrando como exibir um texto </h2>
+		<div id="principal">
+		<h3 class="tituloMensagem">Mensagem sobre determinado assunto</h3>
+		<p>Aqui temos uma mensagem que é relativamente longa, e que não iremos mostrar completa, iremos mostrar apenas até um determinado segmento <a id="vermais" href="texto.txt">ver mais</a>
+			<span id="continuacao"></span>
+		</div>
+	</body>
+</html>

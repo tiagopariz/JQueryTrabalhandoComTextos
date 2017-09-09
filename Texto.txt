@@ -1,0 +1,1 @@
+mas, após ser clicado no ver mais, temos a mensagem completa sendo exibida, que já estava presente no código html, mas apenas invisível.
