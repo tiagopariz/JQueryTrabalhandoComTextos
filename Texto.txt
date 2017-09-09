@@ -1,1 +1,1 @@
-mas, após ser clicado no ver mais, temos a mensagem completa sendo exibida, que já estava presente no código html, mas apenas invisível.
+mas, apÃ©s ser clicado no ver mais, temos a mensagem completa sendo exibida, que jÃ¡ estava presente no cÃ³digo html, mas apenas invisÃ­vel.
