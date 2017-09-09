@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Exemplo de Imagens</title>
+	<style>
+		#principal { width:500px; }
+		#continuacao { display:none; }
+	</style>
+		
+	<script src="js/jquery-3.2.1.js"></script>
+	
+	<script>
+	  $(function () {
+		$("#vermais").click(function(){
+			$("#vermais").css({"display" : "none"});
+			$("#continuacao").css({"display" : "inline"});
+			return false;
+		});
+	  });
+	</script>
+
+</head>
+<body>
+	<h2>Demonstrando como exibir um texto </h2>
+	<div id="principal">
+	
+		<h3 class="tituloMensagem">Título</h3>
+		
+		<p>
+		Aqui temos uma mensagem que é relativamente longa, e que não iremos mostrar completa, iremos mostrar apenas até um determinado segmento
+		
+		<a id="vermais" href="#">ver mais</a>
+		
+		<span id="continuacao"> mas, após ser clicado no ver mais, temos a mensagem completa sendo exibida, que já estava presente no código html, mas apenas invisível.</span>
+		</p>
+	</div>
+</body>
+</html>
